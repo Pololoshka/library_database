@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "library_database"
+version = "0.1.0"
+description = ""
+authors = ["Pololoshka <sokolova.polya.98gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "~3.13"
+
+
+[tool.poetry.group.dev.dependencies]
+sqlfluff = "^3.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.sqlfluff.core]
+dialect = "postgres"
+templater = "raw"
+max_line_length = 140
+exclude_rules = ["RF01", "RF03", "RF05"]
+large_file_skip_byte_limit = 23000
+
+
+[tool.sqlfluff.indentation]
+indent_unit = "space"
+tab_space_size = 4
+
+[tool.sqlfluff.rules.capitalisation.keywords]
+capitalisation_policy = "upper"
