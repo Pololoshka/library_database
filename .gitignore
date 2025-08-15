@@ -18,3 +18,7 @@ _packages
 
 # VS Code
 .vscode/
+
+# files
+delete.sql
+examples.sql
