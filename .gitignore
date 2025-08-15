@@ -20,5 +20,5 @@ _packages
 .vscode/
 
 # files
-delete.sql
-examples.sql
+.delete.sql
+.examples.sql
