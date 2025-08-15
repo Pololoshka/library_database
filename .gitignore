@@ -14,7 +14,7 @@ _packages
 .ruff_cache/
 
 # Environments variables
-.env
+#.env
 
 # VS Code
 .vscode/
